@@ -770,7 +770,7 @@ static const PopupViewLayout PopupViewLayoutVertical = {PopupViewHorizontalLayou
                 switch (layout.vertical) {
 
                     case PopupViewVerticalLayoutTop: {
-                        finalContainerFrame.origin.y = 0;
+                        finalContainerFrame.origin.y = 20;
                         containerAutoresizingMask = containerAutoresizingMask | UIViewAutoresizingFlexibleBottomMargin;
                         break;
                     }
