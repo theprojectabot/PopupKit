@@ -159,6 +159,10 @@ static const PopupViewLayout PopupViewLayoutCenter;
 // Show with specified layout.
 - (void)showWithLayout:(PopupViewLayout)layout;
 
+//hard coded vertical layout
+-(void)showWithVerticalLayout NS_SWIFT_NAME(PopupView.showWithVerticalLayout());
+
+
 // Show with specified layout in specific view.
 - (void)showWithLayout:(PopupViewLayout)layout
                 inView:(UIView*) view;

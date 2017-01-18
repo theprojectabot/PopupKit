@@ -34,6 +34,7 @@ PopupViewLayout PopupViewLayoutMake(PopupViewHorizontalLayout horizontal, PopupV
 }
 
 static const PopupViewLayout PopupViewLayoutCenter = {PopupViewHorizontalLayoutCenter, PopupViewVerticalLayoutCenter};
+static const PopupViewLayout PopupViewLayoutVertical = {PopupViewHorizontalLayoutCenter, PopupViewVerticalLayoutTop};
 
 
 @interface NSValue (PopupViewLayout)
@@ -227,6 +228,10 @@ static const PopupViewLayout PopupViewLayoutCenter = {PopupViewHorizontalLayoutC
 
 - (void)showWithLayout:(PopupViewLayout)layout {
     [self showWithLayout:layout duration:0.0];
+}
+
+-(void)showWithVerticalLayout{
+    [self showWithLayout:PopupViewLayoutVertical duration:0.0];
 }
 
 
